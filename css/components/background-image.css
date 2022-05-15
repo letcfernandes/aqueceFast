@@ -1,0 +1,9 @@
+background-presentation {
+    position: absolute;
+    width: 428px;
+    height: 841px;
+    left: 0px;
+    top: 74px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(07121224797040.jpg);
+    filter: blur(4px);
+}

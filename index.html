@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--SCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/components/menuNavBar.css">
+    <link rel="stylesheet" href="./css/components/background-image.css">
+    <title>Aquece Fast</title>
 </head>
+
 <body>
-    
+    <!--header é para setar um cabeça do site-->
+    <header id="header">
+        <a id="logo" href=""><svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 52H5.60612M67 52H61.3939M61.3939 52V3.37209C61.3939 3.37209 61.3939 1 59.0694 1C57.2098 1 52.0959 1 49.7714 1C47.4469 1 47.4469 3.37209 47.4469 3.37209C47.4469 3.37209 47.4469 36.5814 47.4469 52M61.3939 52H47.4469M47.4469 52H40.4735M40.4735 52V16.036C40.4735 16.036 40.4735 14.0465 38.149 14.0465C36.2894 14.0465 31.2075 14.0465 28.851 14.0465C26.4945 14.0465 26.4945 16.036 26.4945 16.036C26.4945 16.036 26.5052 40.5349 26.4945 52M40.4735 52H26.4945M26.4945 52H19.5531M19.5531 52V28.2791C19.5531 27.8837 19.5531 25.907 17.2286 25.907C15.369 25.907 10.2551 25.907 7.93061 25.907C5.60612 25.907 5.60612 27.5674 5.60612 29.4651C5.60612 31.3628 5.60612 45.2791 5.60612 52M19.5531 52H5.60612" stroke="white" stroke-width="2"/>
+            </svg>
+        </a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+            <ul id="menu" role="menu">
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Portfólio</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="apresentacao">
+            <img class="background-presentation" src="src/imagemFundo.jpg">
+        </section>
+
+        <section id="produtos">
+
+        </section>
+
+        <section id="apresentacao">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="instalacao">
+
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+
+    <script src="./scripts/script.js">
+    </script>
 </body>
+
 </html>
